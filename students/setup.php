@@ -7,7 +7,7 @@ $pass = '';
 
 try {
 
-    $pdo = new PDO("mysql:host=$host", $user, $pass);
+    $pdo = new PDO('mysql:host=localhost;dbname=university_db', 'root', '');
     $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
     $pdo->exec("CREATE DATABASE IF NOT EXISTS `$dbname` CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci");

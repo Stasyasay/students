@@ -95,7 +95,11 @@ try {
     <div class="success-box">
         <h1>Зачислен!</h1>
         <p>Студент <strong><?= htmlspecialchars($full_name) ?></strong> успешно зачислен в группу <strong><?= htmlspecialchars($group['name']) ?></strong></p>
+        
+        <div style="margin-top: 20px;">
         <a href="index.php" class="btn">🎓 Вернуться на главную</a>
+        <a href="students_list.php" class="btn" style="background: linear-gradient(135deg, #ff6b6b 0%, #ee5a24 100%); margin-left: 10px;">📋 Посмотреть список зачисленных</a>
+    </div>
     </div>
 </body>
 </html>
